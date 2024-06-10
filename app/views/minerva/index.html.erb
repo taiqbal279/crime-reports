@@ -1,0 +1,146 @@
+<%= render partial: "layouts/nav_minerva" %>
+<div class="minerva-carousal-container">
+  <%= image_tag 'minerva-2.png', class: "mySlides" %>
+  <%= image_tag 'minerva-1.png', class: "mySlides" %>
+</div>
+<div class="packages-container">
+  <div class="package-header-text">Our Packages</div>
+  <div class="package-wrapper">
+    <a href="http://0.0.0.0:3000/minerva/enroll" class="package-cell">
+      <div class="header-box">
+        Daily
+      </div>
+      <div class="price-box">
+        <div>799 ৳</div>
+      </div>
+      <div class="body-box">
+        <div>* An exceptional program for your child!</div>
+        <div>* FULL DAY sessions from 07:30 - 18:30</div>
+        <div>* 2 meals/ day plus snack</div>
+        <div>* Covid-19 Safe environment</div>
+        <div>* Indoor activities</div>
+        <div>* Outdoor activities</div>
+      </div>
+    </a>
+    <div class="package-cell">
+      <div class="header-box">
+        Weekly
+      </div>
+      <div class="price-box">
+        <div>3599 ৳</div>
+      </div>
+      <div class="body-box">
+        <div>* An exceptional program for your child!</div>
+        <div>* FULL DAY sessions from 07:30 - 18:30</div>
+        <div>* 2 meals/ day plus snack</div>
+        <div>* Covid-19 Safe environment</div>
+        <div>* Indoor activities</div>
+        <div>* Outdoor activities</div>
+      </div>
+    </div>
+    <div class="package-cell">
+      <div class="header-box">
+        Monthly
+      </div>
+      <div class="price-box">
+        <div>15,999 ৳</div>
+      </div>
+      <div class="body-box">
+        <div>* An exceptional program for your child!</div>
+        <div>* FULL DAY sessions from 07:30 - 18:30</div>
+        <div>* 2 meals/ day plus snack</div>
+        <div>* Covid-19 Safe environment</div>
+        <div>* Indoor activities</div>
+        <div>* Outdoor activities</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonial-container">
+  <div class="testimonial-header-text">How We Help Families</div>
+  <div class="testimonial-carousal-container">
+    <div class="testimonialSlides">
+      <%= image_tag 'testimonial-2.jpg' %>
+      <div class="testimonial-text">
+        "I have benefited tremendously from Minerva. Being a working woman with a child, Minerva has provide me with an
+        opportunity to maintain parenting and work life balance with their safe and reliable service"
+        <br>
+        <span>&nbsp;-&nbsp;Naila</span>
+      </div>
+    </div>
+    <div class="testimonialSlides">
+      <%= image_tag 'testimonial-3.jpg' %>
+      <div class="testimonial-text">
+        "My girl just loves everyone here in Minerva. She was so shy and quite before but the environment of Minerva and
+        of course with the expert care givers' oversight, she is growing as a happy, jolly minded kid"
+        <br>
+        <span>&nbsp;-&nbsp;Oindrila</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="minerva-footer">
+  <div class="vertical">
+    <div class="pages">
+      <div>About</div>
+      <div>Our Program</div>
+      <div>Special Curriculum</div>
+      <div>Testimonial</div>
+      <div>Virtual Tour</div>
+      <div>Career</div>
+    </div>
+    <div class="address">
+      We are open
+      <br>
+      7am to 8pm
+      <br>
+      202, gulshan Avenue,
+      <br>
+      Dhaka 1214
+    </div>
+    <div class="career">
+      Join Our team.
+      <br>
+      Mail Us at tasnuva.cse89@gmail.com
+      <br>
+      or Call at +8801553806262
+    </div>
+  </div>
+  <hr style="margin: 30px 25% 0 25%; width: 50%; color: silver">
+  <div class="copyright">
+    Copyright © 2022 minerva, All Rights Reserved.
+  </div>
+</div>
+
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+
+    var sindex = 0;
+    testimonial_carousel();
+    function testimonial_carousel() {
+        var i;
+        var x = document.getElementsByClassName("testimonialSlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        sindex++;
+        if (sindex > x.length) {sindex = 1}
+        x[sindex-1].style.display = "block";
+        setTimeout(testimonial_carousel, 4000); // Change image every 2 seconds
+    }
+</script>

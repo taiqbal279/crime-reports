@@ -1,0 +1,2 @@
+class CommunityArea < ApplicationRecord
+end

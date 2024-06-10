@@ -1,0 +1,2 @@
+class CrimeReport < ApplicationRecord
+end

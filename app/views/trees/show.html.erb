@@ -1,0 +1,45 @@
+<div class="header">
+<!--  <p class="header-text">Mango Tracking</p>-->
+  <div class="logo-image">
+    <%= image_tag 'meridian-01.png' %>
+  </div>
+</div>
+
+<div class="tree-body">
+<!--  <p class="body-header">শুভেচ্ছা বার্তা</p>-->
+  <p class="body-header"></p>
+  <div class="tree-container">
+    <div class="breed">
+      <p class="breed-name"><%= @tree.breed_name %></p>
+      <% @item_descriptions.each do |i| %>
+        <div class="breed-desc">
+          <p><span><%= i.item_name %> : </span></p><%= i.description.html_safe %>
+        </div>
+        <%- if i.images.attached? %>
+          <div class="image-container swiper-container">
+            <div class="swiper-wrapper">
+              <% i.images.each do |img| %>
+                <div class="swiper-slide">
+                  <div class="image-cell">
+                    <%= image_tag img %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+<!--            <div class="swiper-pagination swiper-pagination-bullet"></div>-->
+          </div>
+        <% end %>
+        <hr>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="footer-body">
+  <a class="footer-text" href="https://maps.google.com/?q=21.928371,92.200691" target="_blank">
+    Plantation Address:<br>
+    303, Daluchari, Keazu Para, Lama, Bandarban, Chittagong.
+  </a>
+  <br>
+  <a href="https://maps.google.com/?q=21.928371,92.200691" target="_blank">https://maps.google.com/?q=21.928371,92.200691</a>
+</div>

@@ -1,0 +1,48 @@
+<div class="header">
+  <p class="header-text">Mango Tracking</p>
+</div>
+
+<div class="body">
+  <p class="body-header">শুভেচ্ছা বার্তা</p>
+  <div class="tree-container">
+    <div class="breed">
+      <p class="breed-name"><%= @tree.breed_name %></p>
+      <div class="breed-desc">
+        <span>জাতের বর্ননা : </span><%= @tree.breed_desc %>
+      </div>
+      <hr>
+    </div>
+    <div class="body-text">
+      <span>বাগানের বর্ননা : </span><%= @tree.garden_desc %>
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>নির্দিষ্ট গাছের বর্ননা : </span><%= @tree.description %>
+      <!--      <div class="carousel "></div>-->
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>মুকুল আসার সময় : </span><%= @tree.flowering_period %>
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>সার এবং কীটনাশক : </span><%= @tree.fertilization.html_safe %>
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>আম পারার সময় : </span><%= @tree.harvesting_period %>
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>আম প্যাকেজিং : </span><%= @tree.packaging_period %>
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>আম পার্সেল : </span><%= @tree.parcel_period %>
+    </div>
+    <hr>
+    <div class="body-text">
+      <span>আম ডেলিভারি : </span><%= @tree.delivery_period %>
+    </div>
+  </div>
+</div>

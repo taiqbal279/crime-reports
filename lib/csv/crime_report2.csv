@@ -1,0 +1,11 @@
+Date,Time,Day,Month,Year,Primary Type,Description,Location Description,Arrest,Domestic,On Weekend,Beat,District,Community Area ID,Community Area
+01-01-2008,12:01 AM,Tuesday,January,2008,CRIM SEXUAL ASSAULT,NON-AGGRAVATED,RESIDENCE,false,true,false,1134,011,29,North Lawndale
+24-10-2008,02:30 PM,Friday,October,2008,DECEPTIVE PRACTICE,FINANCIAL IDENTITY THEFT OVER $ 300,APARTMENT,false,false,false,1633,016,17,Dunning
+24-07-2008,12:01 AM,Thursday,July,2008,SEX OFFENSE,CRIMINAL SEXUAL ABUSE,APARTMENT,false,true,false,1134,011,29,North Lawndale
+01-01-2008,12:01 AM,Tuesday,January,2008,OFFENSE INVOLVING CHILDREN,AGG SEX ASSLT OF CHILD FAM MBR,RESIDENCE,false,false,false,2534,025,20,Hermosa
+26-02-2008,12:00 AM,Tuesday,February,2008,MOTOR VEHICLE THEFT,AUTOMOBILE,STREET,false,false,false,2411,024,2,West Ridge
+28-06-2008,11:00 PM,Saturday,June,2008,THEFT,OVER $500,STREET,false,false,true,2033,020,3,Uptown
+31-07-2008,04:30 AM,Thursday,July,2008,BATTERY,AGGRAVATED: HANDGUN,SIDEWALK,false,false,false,0621,006,71,Auburn Gresham
+08-08-2008,11:00 PM,Friday,August,2008,CRIMINAL DAMAGE,TO VEHICLE,STREET,false,false,false,1611,016,10,Norwood Park
+23-09-2008,06:30 AM,Tuesday,September,2008,THEFT,$500 AND UNDER,STREET,false,false,false,0912,009,58,Brighton Park
+21-12-2008,11:10 AM,Sunday,December,2008,DECEPTIVE PRACTICE,FINANCIAL IDENTITY THEFT OVER $ 300,"",false,false,true,0223,002,38,Grand Boulevard
